@@ -5,6 +5,7 @@ import yoga from '@/assets/yoga.jpeg'
 import mma from '@/assets/mma.jpeg'
 import boxeo from '@/assets/boxeo.jpeg'
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 type SportsType = {
     id: number,
@@ -48,7 +49,7 @@ const HeroSports = () => {
                             <p className='w-full p-2'>{sport.description}</p>
                             <div className="inline-block pt-4">
                                 <Button className='px-auto border border-secondary sm:flex items-center justify-between gap-2 sm:gap-7 text-secondary hover:bg-secondary hover:text-primary'>
-                                    Saber más
+                                    <Link href={`/disciplinas/${sport.name.toLowerCase()}`}>Saber más</Link>
                                 </Button>
                             </div>
                         </div>
