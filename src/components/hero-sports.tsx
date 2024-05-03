@@ -1,20 +1,15 @@
-import React from 'react'
-import Image from 'next/image';
-import { StaticImageData } from 'next/image';
-import yoga from '@/assets/yoga.jpeg'
-import mma from '@/assets/mma.jpeg'
-import boxeo from '@/assets/boxeo.jpeg'
+import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import yoga from '@/assets/yoga.jpeg';
+import mma from '@/assets/mma.jpeg';
+import boxeo from '@/assets/boxeo.jpeg';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import { SportsInterface } from '@/lib/data';
 
-type SportsType = {
-    id: number,
-    name: string,
-    description: string,
-    img: StaticImageData
-}[];
 
-const sports: SportsType = [
+
+const sports: SportsInterface[] = [
     {
         id: 1,
         name: 'MMA',
@@ -33,7 +28,7 @@ const sports: SportsType = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam ratione itaque dicta inventore. Amet sunt fugiat, ex rem totam tempora eaque, in nesciunt magni temporibus aspernatur aliquid ullam voluptas!',
         img: yoga
     }
-]
+];
 
 const HeroSports = () => {
     return (
@@ -41,8 +36,8 @@ const HeroSports = () => {
             {sports.map((sport) => {
                 return (
                     <div className='flex flex-col pb-10 md:w-2/3 md:p-10' key={sport.id}>
-                        <div className="h-52 md:h-72 overflow-hidden"> {/* Establecer una altura fija y overflow hidden */}
-                            <Image src={sport.img} alt='image' /> {/* layout="fill" para ajustar la imagen */}
+                        <div className="h-52 md:h-72 overflow-hidden">
+                            <Image src={sport.img} alt='image' width={500} height={300} /> 
                         </div>
                         <div className='flex flex-col items-center justify-center gap-3 md:pt-3'>
                             <h1 className='text-2xl pt-3'>{sport.name}</h1>
@@ -54,11 +49,10 @@ const HeroSports = () => {
                             </div>
                         </div>
                     </div>
-                )
+                );
             })}
-
         </section>
-    )
-}
+    );
+};
 
-export default HeroSports
+export default HeroSports;

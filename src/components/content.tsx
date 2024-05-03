@@ -1,14 +1,9 @@
 import React from 'react'
 import { Heart, TrendingUp, ThumbsUp } from 'lucide-react'
+import {AdvantagesInterface} from '@/lib/data'
 
-type AdvantagesType = {
-    id: number,
-    icon: React.ReactNode, // Cambiado LucideIcon a React.ReactNode
-    title: string,
-    text: string
-}[];
 
-const advantages: AdvantagesType = [
+const advantages: AdvantagesInterface[] = [
     {
         id: 1,
         icon: <Heart />, // Usando el componente React Heart en lugar del objeto directamente
