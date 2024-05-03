@@ -2,7 +2,7 @@ import React from 'react'
 import { Separator } from './ui/separator'
 import { Instagram, Twitter } from 'lucide-react'
 
-type iconType = React.ReactNode;
+
 
 const Footer = () => {
     return (

@@ -1,34 +1,16 @@
 "use client"
 
-import { StaticImageData } from 'next/image';
 import { Activity, ArrowBigUpDash } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from './ui/button';
+import {DisciplinePropsInterface} from '@/lib/data'
+import { scrollToTop } from '@/lib/utils';
 
 
-interface DisciplineProps {
-  name: string;
-  kcal: number;
-  duration: number;
-  history: string;
-  benefitName1:string;
-  benefitName2:string;
-  benefitName3:string;
-  benefit1: string;
-  benefit2: string;
-  benefit3: string;
-  img1: StaticImageData;
-  img2: StaticImageData;
-}
 
-const Disciplines = ({ name, kcal, duration, history, benefitName1, benefitName2, benefit3, benefit1,benefit2,benefitName3, img1, img2 }: DisciplineProps) => {
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+const Disciplines = ({ name, kcal, duration, history, benefitName1, benefitName2, benefit3, benefit1,benefit2,benefitName3, img1, img2 }: DisciplinePropsInterface) => {
+
 
   return (
     <div className='flex flex-col'>

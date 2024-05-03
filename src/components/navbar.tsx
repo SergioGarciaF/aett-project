@@ -22,7 +22,7 @@ const Navbar = () => {
     const router = useRouter()
 
     return (
-        <div className='flex items-center justify-between p-6 md:px-20 mx-auto sm:max-width-4xl md:max-width-6xl bg-primary text-secondary text-lg'>
+        <nav className='flex items-center justify-between p-6 md:px-20 mx-auto sm:max-width-4xl md:max-width-6xl bg-primary text-secondary text-lg'>
             <div className='items-center justify-between cursor-pointer'>
                 <Link href="/">AETT</Link> 
             </div>
@@ -32,10 +32,10 @@ const Navbar = () => {
                         <NavigationMenuTrigger>Sobre nosotros</NavigationMenuTrigger>
                         <NavigationMenuContent className='flex justify-center bg-primary'>
                             <NavigationMenuLink className='p-4 hover:underline'>
-                                Equipo
+                                <Link href='/equipo'>Equipo</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink className='p-4 hover:underline text-nowrap'>
-                                Horarios y precios
+                                <Link href="/horarios-precios">Horarios y precios</Link>
                             </NavigationMenuLink>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 Prueba una semana gratis
             </Button>
 
-        </div>
+        </nav>
     )
 }
 
