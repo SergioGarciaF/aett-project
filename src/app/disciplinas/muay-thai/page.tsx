@@ -3,7 +3,7 @@ import boxeo from '@/assets/boxeo.jpeg'
 
 export default function Page() {
     return <Disciplines 
-    name='Boxeo' 
+    name='Muay thai' 
     kcal={750} 
     duration={120} 
     history="El Muay Thai, también conocido como el arte marcial tailandés, tiene una historia rica y arraigada en la cultura de Tailandia. Se cree que sus orígenes se remontan a varios siglos atrás, donde se desarrolló como una forma de combate cuerpo a cuerpo para los antiguos guerreros tailandeses. Inicialmente practicado en campos de batalla, el Muay Thai se convirtió en una parte integral de la formación militar y en un deporte popular entre la población tailandesa.

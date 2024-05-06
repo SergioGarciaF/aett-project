@@ -28,7 +28,7 @@ export default function RootLayout({
           <Navbar/>
         </header>
         {children}
-        <footer className='flex flex-col bg-primary md:pt-8'>
+        <footer className='flex flex-col bg-primary'>
           <Separator className='w-full border border-secondary' />
           <div className='flex flex-col md:flex-row justify-between p-10 pt-8 text-secondary'>
             <div className='flex flex-col md:flex-row items-center gap-4'>
