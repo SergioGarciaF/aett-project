@@ -53,5 +53,18 @@ export interface PricingInterface {
     price: number,
 }
 
+export interface ScheduleInterface {
+    img: StaticImageData;
+    name: string,
+    day1: string,
+    day2?: string,
+    day3?: string,
+    day4?: string,
+    day5?: string,
+    morning?: string,
+    evening?: string,
+    night?: string,
+}
+
 
 
