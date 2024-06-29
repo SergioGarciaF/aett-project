@@ -7,6 +7,7 @@ import Autoplay from "embla-carousel-autoplay"
 import imageHeader from '@/assets/portada.jpeg'
 import { Button } from './ui/button'
 
+//Hero de pagina con carousel
 const ImageHeader = () => {
   return (
     <div className='flex flex-col md:flex-row'>

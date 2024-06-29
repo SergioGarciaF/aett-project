@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { TrainersInterface } from '@/lib/data';
+import { TrainersInterface } from '@/lib/definitions';
 
+//Componente de miembro de equipo
 const TeamCard = ({ img, name, description, speciality1, speciality2, speciality3, achievement1, achievement2, achievement3 }: TrainersInterface) => {
     return (
         <div className="bg-white rounded-lg shadow-md overflow-hidden">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heart, TrendingUp, ThumbsUp } from 'lucide-react'
-import {AdvantagesInterface} from '@/lib/data'
+import {AdvantagesInterface} from '@/lib/definitions'
 
 
 const advantages: AdvantagesInterface[] = [
@@ -23,7 +23,7 @@ const advantages: AdvantagesInterface[] = [
         text: 'A medida que los deportistas de contacto ganan experiencia y habilidades en el ring o tatami, su confianza en sí mismos aumenta. Esto se traduce en una mayor autoestima y una actitud más segura y positiva en la vida cotidiana.'
     }
 ]
-
+//Componente de ventajas en pagina principal
 const Content = () => {
     return (
         <section className='text-secondary p-10'>

@@ -5,10 +5,10 @@ import mma from '@/assets/mma.jpeg';
 import boxeo from '@/assets/boxeo.jpeg';
 import { Button } from './ui/button';
 import Link from 'next/link';
-import { SportsInterface } from '@/lib/data';
+import { SportsInterface } from '@/lib/definitions';
 
 
-
+//Depoertes practicados
 const sports: SportsInterface[] = [
     {
         id: 1,

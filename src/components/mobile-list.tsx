@@ -1,9 +1,11 @@
+"use client"
 import { Menu } from 'lucide-react'
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
 import Link from 'next/link'
 import DisciplinesMobile from './disciplines-mobile'
 import { useState } from "react";
 
+//UI del menu movil
 const MobileList = () => {
   const [showDisciplines, setShowDisciplines] = useState(false);
 

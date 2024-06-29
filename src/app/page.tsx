@@ -1,5 +1,6 @@
 "use client"
 
+import AuthDashboard from "@/components/auth-dashboard";
 import Content from "@/components/content";
 import HeroSports from "@/components/hero-sports";
 import ImageHeader from "@/components/image-header";

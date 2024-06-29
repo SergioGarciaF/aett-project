@@ -1,6 +1,7 @@
 import React from 'react'
-import { PricingInterface } from '@/lib/data'
+import { PricingInterface } from '@/lib/definitions'
 
+//Componente de precios
 const PricingCard = ({ name, price}: PricingInterface) => {
     return (
         

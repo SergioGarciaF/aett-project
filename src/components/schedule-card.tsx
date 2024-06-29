@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import { ScheduleInterface } from '@/lib/data'
+import { ScheduleInterface } from '@/lib/definitions'
 import { Button } from './ui/button'
 import Link from 'next/link'
 
+//Componente de horarios
 const ScheduleCard = ({ img, name, day1, day2, day3, day4, day5, morning, evening, night }: ScheduleInterface) => {
   return (
     <section className="container w-full p-10 mx-auto">
