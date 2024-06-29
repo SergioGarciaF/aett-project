@@ -9,7 +9,7 @@ interface ContextProps {
 const initialState = {
   isAuthenticated: false,
   message: ''
-};
+}; 
 
 export const Context = createContext<ContextProps>({
   state: initialState,
