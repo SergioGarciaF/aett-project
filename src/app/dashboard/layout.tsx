@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import SideNav from '@/components/ui/dashboard/Sidenav';
 import { passwordReducer } from '@/reducer/password-reducer';
 import { Anton } from 'next/font/google';
@@ -15,6 +16,7 @@ interface ContextProps {
   dispatch: React.Dispatch<any>;
 }
 
+// Crea y exporta el contexto
 export const Context = createContext<ContextProps>({
   state: { isAuthenticated: false, message: '' },
   dispatch: () => null
@@ -34,8 +36,9 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <html lang='es'>
-      <Context.Provider value={{ state, dispatch }}>
-        <body>
+      <head />
+      <body>
+        <Context.Provider value={{ state, dispatch }}>
           <div className="flex h-screen flex-col md:flex-row md:overflow-hidden bg-primary">
             <div className="w-full flex-none md:w-64">
               <SideNav />
@@ -44,8 +47,8 @@ export default function Layout({ children }: LayoutProps) {
               {!state.isAuthenticated ? <AuthDashboard /> : children}
             </div>
           </div>
-        </body>
-      </Context.Provider>
+        </Context.Provider>
+      </body>
     </html>
   );
 }
