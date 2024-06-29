@@ -37,7 +37,7 @@ const AuthDashboard = () => {
                     Iniciar sesión
                 </Button>
                 {state.message && (
-                    <p className={`mt-2 ${state.isAuthenticated ? 'text-green-500' : 'text-red-500'}`}>
+                    <p className={`mt-2 ${state.isAuthenticated ? 'text-secondary' : 'text-secondary'}`}>
                         {state.message}
                     </p>
                 )}
