@@ -5,6 +5,8 @@ import Fighter from "@/models/Fighter";
 // Importa el componente para mostrar la tarjeta de luchadores.
 import FightersCard from "@/components/fightersCard";
 
+
+
 // Función asíncrona para cargar los luchadores desde la base de datos.
 const loadFighters = async () => {
   // Conecta a la base de datos.

@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useState } from 'react';
 import { Button } from './ui/button';
-import { Context } from '@/app/dashboard/layout';
+import { Context } from '@/context/authContext';
 
 const AuthDashboard = () => {
     const password = process.env.NEXT_PUBLIC_DB_PASSWORD;

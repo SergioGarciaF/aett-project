@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Context } from '@/app/dashboard/layout';// Asegúrate de que la ruta es correcta
+import { Context } from '@/context/authContext';// Asegúrate de que la ruta es correcta
 
 const Sidenav: React.FC = () => {
     const { state, dispatch } = useContext(Context); // Accede al estado del contexto

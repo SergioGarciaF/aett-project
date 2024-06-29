@@ -2,7 +2,7 @@
 
 import React, { useContext, useState } from 'react'; 
 import { useRouter } from 'next/navigation'; 
-import { Context } from '../layout'; // Importa el contexto desde el archivo de layout.
+import { Context } from '@/context/authContext'; // Importa el contexto desde el archivo de layout.
 
 const Formulario: React.FC = () => {
     // Define el estado inicial del nuevo luchador.
