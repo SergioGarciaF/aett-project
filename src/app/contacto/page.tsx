@@ -41,7 +41,7 @@ const ContactForm = () => {
                         <select
                             id="option"
                             name="option"
-                            className="block w-full bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-sm"
+                            className="block w-full bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-md"
                             value={option}
                             onChange={(e) => setOption(e.target.value)}
                             required
@@ -75,7 +75,7 @@ const ContactForm = () => {
                                 <select
                                     id="activity"
                                     name="activity"
-                                    className="block w-full mt-5 bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-sm"
+                                    className="block w-full mt-5 bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-md"
                                     value={activity}
                                     onChange={(e) => setActivity(e.target.value)}
                                     required
@@ -89,12 +89,12 @@ const ContactForm = () => {
                             </div>
                             <div className="mb-4">
                                 <label htmlFor="time" className="block text-2xl font-medium text-gray-700">
-                                    Select Time
+                                    Selecciona turno
                                 </label>
                                 <select
                                     id="time"
                                     name="time"
-                                    className="block w-full mt-5 bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-sm"
+                                    className="block w-full mt-5 bg-primary text-secondary border-secondary rounded-md shadow-sm focus:ring-secondary focus:border-secondary sm:text-md"
                                     value={time}
                                     onChange={(e) => setTime(e.target.value)}
                                     required
@@ -108,7 +108,7 @@ const ContactForm = () => {
                     ) : null}
                     <Button
                         type="submit"
-                        className="border border-secondary sm:flex items-center justify-between gap-2 sm:gap-7 hover:bg-secondary hover:text-primary cursor-pointer"
+                        className="border border-secondary sm:flex items-center justify-between gap-2 sm:gap-7 hover:bg-secondary hover:text-primary cursor-pointer text-md"
                     >
                         Enviar
                     </Button>

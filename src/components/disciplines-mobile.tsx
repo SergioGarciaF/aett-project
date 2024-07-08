@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
+//Menu movil de la pagina
 const DisciplinesMobile = () => {
   return (
     <div className='flex flex-col no-underline py-3 items-start gap-1 text-secondary'>

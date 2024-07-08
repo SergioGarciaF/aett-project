@@ -3,7 +3,7 @@ import TeamCard from './team-card'
 import trainer from '@/assets/trainer.jpeg'
 
 
-
+//Componente de equipo
 const Team = () => {
     return (
         <div className='bg-primary text-secondary flex flex-col justify-center items-center pt-8 p-10 ps-10 overflow-hidden'>

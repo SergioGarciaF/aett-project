@@ -3,12 +3,12 @@
 import { Activity, ArrowBigUpDash } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import {DisciplinePropsInterface} from '@/lib/data'
+import {DisciplinePropsInterface} from '@/lib/definitions'
 import { scrollToTop } from '@/lib/utils';
 
 
 
-
+//Componente de disciplinas en detalle
 const Disciplines = ({ name, kcal, duration, history, benefitName1, benefitName2, benefit3, benefit1,benefit2,benefitName3, img1, img2 }: DisciplinePropsInterface) => {
 
 

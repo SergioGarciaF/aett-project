@@ -45,7 +45,7 @@ const Navbar = () => {
                         <NavigationMenuTrigger>Disciplinas</NavigationMenuTrigger>
                         <NavigationMenuContent className='flex justify-center bg-primary'>
                             <NavigationMenuLink className='p-4 hover:underline'>
-                                <Link href='/disciplinas/mma'> <a>MMA</a></Link>
+                                <Link href='/disciplinas/mma'>MMA</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink className='p-4 hover:underline text-nowrap'>
                                 <Link href='/disciplinas/boxeo'>Boxeo</Link>
@@ -59,9 +59,9 @@ const Navbar = () => {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                 </NavigationMenuList>
-                <NavigationMenuLink className='p-4 cursor-pointer'>
-                    <Link href={'/contacto'}>Contacto</Link>
-                </NavigationMenuLink>
+                <div className='p-4 cursor-pointer'>
+                    <Link href='/contacto'>Contacto</Link>
+                </div>
             </NavigationMenu>
             <div className='flex sm:hidden'>
                 <MobileList />
@@ -69,7 +69,6 @@ const Navbar = () => {
             <Button className='border border-secondary hidden sm:flex items-center justify-between gap-2 sm:gap-7 hover:bg-secondary hover:text-primary cursor-pointer'>
                 <Link target='_blank' href={'https://wa.me/+34640678978?text=Hola, me gustaría probar una semana gratuita en AETT.'}>Prueba una semana gratis</Link>
             </Button>
-
         </nav>
     )
 }
